@@ -189,7 +189,7 @@ export default {
     }
   },
   mounted: function () {
-    const name = this.$route.params.query
+    const name = this.$route.query.q
     this.getData(name)
   }
 }

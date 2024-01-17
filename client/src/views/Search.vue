@@ -29,12 +29,8 @@ export default {
       return [true, 'None']
     },
     postData: function () {
-      this.$router.push({
-        name: 'Result',
-        params: {
-          query: this.query
-        }
-      })
+      const query = encodeURIComponent(this.query); // 对查询参数进行编码
+      this.$router.push(`/Result?q=${query}`);
     },
     shakeBox: function (elemID) {
       const box = this.$refs[elemID]

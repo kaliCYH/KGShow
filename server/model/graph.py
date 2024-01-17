@@ -10,6 +10,8 @@ relation_file_path = config['data']['relation_file_path']
 
 entities_df = pd.read_csv(entities_file_path)
 relation_df = pd.read_csv(relation_file_path)
+# print(entities_df.head)
+# print(relation_df.head)
 
 def get_triple(query):
     selectedR = relation_df[

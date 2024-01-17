@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 // ant design 会修改全局样式，因此要重新适配
-import 'ant-design-vue/lib/table/style/css'
+import 'ant-design-vue/dist/reset.css'
 
 import {
   Table
